@@ -9,24 +9,35 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
+    <script>
+        function toggleMenu() {
+    const menu = document.querySelector('.navbar .menu');
+    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+}
+
+    </script>
+    <div class="overlay"></div>
     <div class="background">
-        <div class="overlay"></div>
+        
         <div class="navbar">
             <div class="logo">BEAUFORT FERRETI</div>
+            <img src="img/menu (2).png" alt="Menú" class="menu-icon" onclick="toggleMenu()" /> <!-- Icono de menú -->
             <div class="menu">
-                <a href="#">Inicio</a>
-                <a href="#">Tendencias</a>
-                <a href="#">Nueva Colección</a>
-                <a href="#" class="button">Iniciar Sesión</a>
-                <a href="#" class="button">Registrarse</a>
+                <a href="#">Home</a>
+                <a href="#">Trends</a>
+                <a href="#">New Collection</a>
+                <a href="login.html" class="button">Log In</a>
+                <a href="signup.html" class="button">Sign Up</a>
             </div>
         </div>
+        
         <div class="content">
             <h1>BEAUFORT FERRETI</h1>
             <p>El lujo está en los detalles</p>
             <a href="#" class="button">shop now <i class="fas fa-arrow-right"></i></a>
         </div>
     </div>
+    
     <section>
         <img src="./img/index.jpg" class="fondo">
     </section>
@@ -254,6 +265,8 @@
 
 
 </div>
+
+
 
 </body>
 </html>

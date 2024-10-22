@@ -121,7 +121,9 @@ body {
     color: black;
     font-weight: 400;
   }
-  
+  .sin-subrayado {
+    text-decoration: none;
+}
   .span {
     font-size: 14px;
     margin-left: 5px;
@@ -194,15 +196,18 @@ h1#sign {
   }
 
   .container {
+ 
       flex-direction: none; 
       align-items: center;
-      width: 100%;
-      padding: 20px;
+      width: 96.5%;
+      height: 100%;
+      padding: 30px;
   }
 
   .form-container {
+    /*background: transparent;*/
       width: 90%;
-      padding: 20px;
+      padding: 10px;
   }
 
   .form {

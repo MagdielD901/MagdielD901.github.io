@@ -84,21 +84,44 @@ h2{
 
 
 @media (max-width: 768px) {
-    h1 {
-        margin-left: 30%;
-        margin-top: -90%;
-        font-size: 1.5rem; /* Ajusta el tamaño en móviles */
+    body, html {
+        height: 100%; /* Asegura que el contenedor ocupe toda la altura */
+        margin: 0; /* Elimina márgenes por defecto */
+        display: flex;
+        flex-direction: column; /* Organiza los elementos en columna */
+        justify-content: center; /* Centra verticalmente */
+        align-items: center; /* Centra horizontalmente */
     }
-    
+
+    .container {
+        text-align: center; /* Centra el texto dentro del contenedor */
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 1.5rem; /* Ajusta el tamaño en móviles */
+        margin: 50px 0; /* Espacio arriba y abajo del título */
+    }
+
+    h2 {
+        font-size: 1rem; /* Ajusta el tamaño del texto en móviles */
+        margin: 50px 0; /* Espacio arriba y abajo del subtítulo */
+    }
+
     .btn {
-        margin-left: 30%;
+        margin: 50px 0 90px; /* Espacio arriba (40px) y abajo (20px) del botón */
         height: 2.2em; /* Ajusta la altura en móviles */
         font-size: 18px; /* Ajusta el tamaño de la fuente en móviles */
     }
 
-    h2, #demo {
-        
-        font-size: 1rem; /* Ajusta el tamaño del texto en móviles */
+    #demo {
+        font-size: 1rem; 
+        margin: 50px 0; /* Espacio arriba y abajo del texto demo */
     }
 }
+
+
+
+
+
 

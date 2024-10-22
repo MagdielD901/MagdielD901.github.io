@@ -834,4 +834,106 @@ div#log img {
   .svgIcon path {
     fill: white;
   }
-  
+
+  .navbar .menu-icon {
+        display: none;
+    }
+
+
+
+  /*CELULAR*/
+  @media (max-width: 768px) {
+    .overlay {
+        position: fixed; /* Cambiar a fixed para cubrir toda la pantalla */
+        /*width: 100vw; /* Asegurarse de que cubra el ancho completo */
+       /* height: 100vh; /* Asegurarse de que cubra el alto completo */
+        top: 0;
+        left: 0;
+        
+    }
+    .navbar .logo {
+        font-size: 3em;
+        display: inline-block; /* o display: block; */
+        white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    }
+    
+
+    .fondo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Hace que la imagen cubra todo el área */
+        z-index: -1; /* Envía la imagen al fondo */
+    }
+    .navbar .menu {
+        border-radius: 40px 40px 40px 40px;
+        flex-direction: column; /* Para que se apilen verticalmente */
+        position: absolute; /* Para que se muestre sobre otros elementos */
+        background-color: rgba(51, 51, 51, 0.7); /* Fondo difuminado transparente */
+        backdrop-filter: blur(10px); /* Efecto de desenfoque */
+        top: 100px; /* Ajusta según la altura deseada */
+        left: 150px; /* Cambia este valor para mover el menú desde la izquierda */
+        width: 500px; /* Cambia al ancho deseado */
+        z-index: 1000; /* Asegurar que esté encima */
+        transition: all 0.3s ease; /* Transición suave */
+    }
+    
+    
+
+    .navbar .menu-icon {
+        display: block; /* Mostrar la imagen del menú */
+        width: 40px; /* Ajusta el tamaño según necesites */
+        height: auto; /* Mantiene la proporción */
+        cursor: pointer;
+        margin-left: 60%;
+        margin-top: -1%;
+    }
+
+    .navbar .menu a {
+        margin: 10px 0; /* Espaciado vertical entre los enlaces */
+    }
+
+    header{
+        background-color: black;
+        margin-top: 180%;
+    }
+    
+    div#tres > h1 {
+        position: absolute;
+        top: 190%;
+        left: 57%;
+        font-size: 3rem;
+        color: rgb(255, 0, 0);
+        z-index: 1;
+    }
+    
+div#cuatro > h1 {
+    position: absolute;
+    top: 190%;
+    left: 62%;
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+}
+div#cuatro > h2 {
+    position: absolute;
+    top: 190%;
+    left: 58%;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+}
+.content h1 {
+    position: absolute;
+    margin-top: 100%;
+    margin-left: 75%;
+    font-size: 3rem;
+    font-weight: 700;
+   
+}
+    
+
+}
+
