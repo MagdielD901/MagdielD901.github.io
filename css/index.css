@@ -844,17 +844,15 @@ div#log img {
   /*CELULAR*/
   @media (max-width: 768px) {
     .overlay {
-        position: fixed; /* Cambiar a fixed para cubrir toda la pantalla */
-        /*width: 100vw; /* Asegurarse de que cubra el ancho completo */
-       /* height: 100vh; /* Asegurarse de que cubra el alto completo */
+        position: fixed; 
         top: 0;
         left: 0;
         
     }
     .navbar .logo {
         font-size: 3em;
-        display: inline-block; /* o display: block; */
-        white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+        display: inline-block; 
+        white-space: nowrap; 
     }
     
 
@@ -864,30 +862,31 @@ div#log img {
         left: 0;
         width: 100%;
         height: 100%;
-        object-fit: cover; /* Hace que la imagen cubra todo el área */
-        z-index: -1; /* Envía la imagen al fondo */
+        object-fit: cover; 
+        z-index: -1; 
     }
     .navbar .menu {
+        display: none;
         border-radius: 40px 40px 40px 40px;
-        flex-direction: column; /* Para que se apilen verticalmente */
-        position: absolute; /* Para que se muestre sobre otros elementos */
-        background-color: rgba(51, 51, 51, 0.7); /* Fondo difuminado transparente */
-        backdrop-filter: blur(10px); /* Efecto de desenfoque */
-        top: 100px; /* Ajusta según la altura deseada */
-        left: 150px; /* Cambia este valor para mover el menú desde la izquierda */
-        width: 500px; /* Cambia al ancho deseado */
-        z-index: 1000; /* Asegurar que esté encima */
-        transition: all 0.3s ease; /* Transición suave */
+        flex-direction: column; 
+        position: absolute; 
+        background-color: rgba(51, 51, 51, 0.7); 
+        backdrop-filter: blur(10px); 
+        top: 100px; 
+        left: 150px; 
+        width: 500px; 
+        z-index: 1000; 
+        transition: all 0.3s ease; 
     }
     
     
 
     .navbar .menu-icon {
-        display: block; /* Mostrar la imagen del menú */
-        width: 40px; /* Ajusta el tamaño según necesites */
-        height: auto; /* Mantiene la proporción */
+        display: block; 
+        width: 40px; 
+        height: auto; 
         cursor: pointer;
-        margin-left: 60%;
+        margin-left: 80%;
         margin-top: -1%;
     }
 
@@ -927,13 +926,201 @@ div#cuatro > h2 {
 }
 .content h1 {
     position: absolute;
-    margin-top: 100%;
-    margin-left: 75%;
-    font-size: 3rem;
+    margin-top: 340%;
+    margin-left: 90%;
+    font-size: 4rem;
     font-weight: 700;
    
 }
-    
 
+.content p {
+    margin-top: 110vh;
+    left: 50%; /* Ajuste horizontal controlado */
+    transform: translateX(120%);
+    font-size: 1.2em;
+    max-width: 80vw; /* Ajuste de ancho */
+}
+
+.content .button {
+    transform: translate(134%, 200%); 
+    font-size: 1.2em;  /* Tamaño original */
+    max-width: 80vw; /* Limitar el ancho máximo en móviles */
+    
+}
+
+h1#WINTER {
+    word-spacing: 5px;
+    font-size: 2.5rem;
+    margin-left: 23%;
+}
+
+header {
+    width: 200%;
+    height: 5%; 
+}
+
+div#uno {
+    
+    margin-top: -3.5%;
+    width: 200%;
+    height: 180%;
+}
+
+div#dos {
+    
+    margin-left: 10%;
+    width: 80%;
+    height: 60%;
+    top: 15%;
+}
+
+div#tres {
+    display: none;
+
+}
+
+div#cuatro > h2 {
+   display: none;
+}
+div#cuatro {
+  display: none;
+}
+header#lalala {
+    background-color: #000000;
+    margin-top: -6.8%;
+    
+}
+h1#mmm {
+    text-align: center;
+    font-size: 2.5rem;
+    
+}
+div#h {
+    margin-top: -3.5%;
+    width: 200%;
+    height: 180%;
+}
+
+div#hombres {
+    margin-left: 25%;
+    width: 50%;
+    height: 29.5%;
+    top: 5%;
+}
+div#hombresdos {
+    margin-left: 25%;
+    width: 50%;
+    height: 29.5%;
+    top: 25%;
+}
+div#hombrestres {
+    background-color: #000000;
+    margin-left: 25%;
+    width: 50%;
+    height: 29.5%;
+    top:45% ;
+}
+#unique-button {
+    display: none;
+}
+/*Mujeres*/
+.container {
+    width: 200%;
+}
+.main-text {
+    font-size: 5rem;
+    top: 40%;
+    left: 22%;
+}
+
+div#textom {
+    margin-top: 50%;
+    width: 70%;
+    height: 16%;
+}
+h2#info {
+    margin-top: 6%;
+    
+    
+    font-size: 1.3rem;
+
+}
+header#doz {
+    margin-top: -6%;
+}
+
+div#m {
+    width: 200%;
+    height: 180%;
+}
+div#muj {
+    margin-left: 25%;
+    width: 50%;
+    height: 29.5%;
+  
+}
+div#mujdos {
+    margin-left: 25%;
+    width: 50%;
+    height: 29.5%;
+    top: 23%;
+}
+div#mujtres {
+    margin-left: 25%;
+    width: 50%;
+    height: 29.5%;
+    top: 45%;
+}
+button#mk {
+ display: none;
+}
+header#lololo {
+  margin-top: -6.8%;
+}
+div#m.lululu {
+   margin-top: 55%;
+}
+.coleccion-contenedor {
+    width: 200%;
+    margin-top: 5%;
+}
+#e {
+    margin-top:135%;
+}
+#e1 {
+    margin-left: 20%;
+    margin-top: 180%;
+    font-size: 6em;
+    width: 180%;
+}
+#e2 {
+    position: center;
+    margin-left: 37%;
+    margin-top: 210%;
+    width: 150%;
+}
+div#end {
+    width: 200%;
+}
+div#log {
+   display: none;
+}
+#eend {
+    margin-left: 27%;
+    font-size: 3em;
+    width: 170%;
+  
+}
+.cards {
+    margin-left: 63%;
+    margin-top: 70%;
+    gap: 40px;
+   
+}
+.container999 {
+    margin-top: 140%;
+    margin-left: 78%;
+    gap: 40px;
+}
 }
 

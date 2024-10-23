@@ -199,16 +199,20 @@ h1#sign {
  
       flex-direction: none; 
       align-items: center;
-      width: 96.5%;
+      width: 90%;
       height: 100%;
-      padding: 30px;
+     
+     
   }
 
   .form-container {
-    /*background: transparent;*/
+      background: transparent;
       width: 90%;
       padding: 10px;
+      transform: translate(2%, 25%);
+      
   }
+  
 
   .form {
     display: flex;
@@ -221,9 +225,7 @@ h1#sign {
   }
 
   h1#sign {
-      font-size: 2rem;
-      margin-left: 0;
-      text-align: center;
+     display: none;
   }
 }
 
@@ -243,5 +245,8 @@ h1#sign {
 
   h1#sign {
       font-size: 1.5rem;
+  }
+  .fondo{
+    display: none;
   }
 }
