@@ -204,15 +204,15 @@ h1#title {
     top: 1%;
     left: 2%;
     font-size: 3rem;
-    color: rgb(0, 0, 0); /* Asegúrate de que el texto sea visible */
-    z-index: 1; /* Coloca el texto por encima de la imagen */
+    color: rgb(0, 0, 0); 
+    z-index: 1; 
 }
 h1#m {
     position: absolute;
     top: 80%;
     left: 75%;
     font-size: 3rem;
-    color: rgb(0, 0, 0); /* Asegúrate de que el texto sea visible */
+    color: rgb(0, 0, 0); 
     z-index: 1;
 }
 div#tres > h1 {
