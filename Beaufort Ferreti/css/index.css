@@ -1,0 +1,1172 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+.fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hace que la imagen cubra todo el área */
+    z-index: -1; /* Envía la imagen al fondo */
+}
+
+.background {
+   
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.navbar .menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .menu a.button {
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin: 0;
+}
+
+.content p {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 10px 0 20px;
+}
+
+.content .button {
+    position: relative;
+    font-size: 1.2em;  /* Tamaño original */
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 30px; /* Tamaño original */
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 30px;  /* Radio de borde original */
+    transition: all 0.2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 700;
+    color: black;
+    background-color: white;
+}
+
+.content .button i {
+    margin-left: 10px;  /* Mantiene el margen entre el texto y el icono */
+}
+
+.content .button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.content .button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.content .button::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+.content .button::after {
+    background-color: #fff;
+}
+
+.content .button:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+
+.content .button i {
+    margin-left: 10px;
+}
+
+header{
+    background-color: black;
+    margin-top: -4%;
+}
+h1#WINTER{
+    word-spacing: 70px; 
+    font-size: 4rem;
+    margin-left: 19%;
+    
+}
+div#uno{
+    background-color: rgb(0, 0, 0);
+    margin-top: -3.5%;
+     width: 100%;
+    height: 100%;
+   
+}
+div#dos {
+    
+    margin-left: 3%;
+    border-radius: 10%;
+    width: 48%;
+    height: 90%;
+    position: relative; /* Para que la imagen se posicione dentro del div */
+    overflow: hidden; /* Evitar desbordamiento de la imagen */
+}
+div#tres{
+    background-color: #918f8f;
+    margin-left: 55%;
+    width: 38%;
+    height: 35%;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: -46%;
+  
+}
+div#cuatro{
+    background-color: #918f8f;
+    margin-left: 55%;
+    width: 38%;
+    height: 47%;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 4%;
+  
+}
+div#dos img.men {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cubrir el área sin deformar la imagen */
+}
+h1#title {
+    position: absolute;
+    top: 1%;
+    left: 2%;
+    font-size: 3rem;
+    color: rgb(0, 0, 0); 
+    z-index: 1; 
+}
+h1#m {
+    position: absolute;
+    top: 80%;
+    left: 75%;
+    font-size: 3rem;
+    color: rgb(0, 0, 0); 
+    z-index: 1;
+}
+div#tres > h1 {
+    position: absolute;
+    top: 114%;
+    left: 57%;
+    font-size: 3rem;
+    color: rgb(0, 0, 0); 
+    z-index: 1;
+}
+
+div#cuatro > h1 {
+    position: absolute;
+    top: 150%;
+    left: 62%;
+    font-size: 3rem;
+    color: rgb(0, 0, 0); 
+    z-index: 1;      
+}
+div#cuatro > h2 {
+    position: absolute;
+    top: 164%;
+    left: 58%;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0); 
+    z-index: 1;      
+}
+
+h1#mmm{
+  text-align: center;
+    font-size: 4rem;
+}
+
+div#h{
+    background-color: rgb(0, 0, 0);
+    margin-top: -3.5%;
+     width: 100%;
+    height: 100%;
+   
+}
+div#hombres{
+    background-color: red;
+    margin-left: 3%;
+    border-radius: 10%;
+    width: 30%;
+    height: 70%;
+    position: relative; /* Para que la imagen se posicione dentro del div */
+    overflow: hidden; /* Evitar desbordamiento de la imagen */
+}
+div#hombresdos{
+    background-color: red;
+    margin-top: -35.5%;
+    margin-left: 35%;
+    border-radius: 10%;
+    width: 30%;
+    height: 70%;
+    position: relative; 
+    overflow: hidden; 
+}
+div#hombrestres{
+    background-color: red;
+  margin-top: -35.5%;
+    margin-left: 67%;
+    border-radius: 10%;
+    width: 30%;
+    height: 70%;
+    position: relative; 
+    overflow: hidden;
+}
+
+div#hombresdos img.men {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+div#hombrestres img.men {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+
+#unique-button {
+    width: 10em;
+    margin-left: 44%;
+    margin-top: 5%;
+    position: absolute;
+    height: 3.5em;
+    border: 3px ridge #ffffff;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    transition: 1s;
+    border-radius: 0.3em;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#unique-button::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #000000;
+    transition: 0.5s;
+    transform-origin: center;
+}
+
+#unique-button::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #000000;
+    transition: 0.5s;
+}
+
+#unique-button:hover::before, #unique-button:hover::after {
+    transform: scale(0);
+}
+
+#unique-button:hover {
+    box-shadow: inset 0px 0px 25px #ffffff;
+}
+
+  .container {
+    position: relative;
+    text-align: left;
+    color: white;
+  
+    width: 100%;
+    height: 100%;
+    background-color: #d3d3d3;
+    display: flex;
+    align-items: center;
+  
+}
+
+.text-container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.main-text {
+    font-size: 10rem;
+    font-weight: bold;
+    color: black;
+    margin: 0; 
+    position: absolute; 
+    top: 45%;
+    left: 12%; 
+    transform: translateY(-50%); 
+    z-index: 1; 
+}
+
+
+.main-text .highlight-yellow {
+    color: #f7e018;
+}
+
+.main-text .highlight-black {
+    color: black;
+}
+
+h1#mujerestitle {
+    position: absolute;
+    top: 1%;
+    left: 2%;
+    font-size: 3rem;
+    color: rgb(0, 0, 0); 
+    z-index: 1; 
+}
+
+div#mujeres{
+    background-color: red;
+    margin-top: -1%;
+    margin-left: 57%;
+    border-radius: 10%;
+    width: 40%;
+    height: 90%;
+    position: absolute;
+    overflow: hidden; 
+}
+
+div#mujeres img.women {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+div#textom{
+    background-color: rgb(0, 0, 0);
+    margin-top: 38%;
+    margin-left: 11%;
+    border-radius: 10px 10px 10px 10px;
+    width: 50%;
+    height: 20%;
+    position: absolute;
+    overflow: hidden; 
+}
+
+
+h2#info {
+   margin-left: 3%;
+   margin-top: 5%;
+    top: 114%;
+    left: 57%;
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255); 
+    z-index: 1;
+}
+
+/*Mujeres*/
+div#m{
+    background-color: #d3d3d3;
+    margin-top: -3.5%;
+     width: 100%;
+    height: 100%;
+}
+
+div#muj{
+    background-color: red;
+    margin-left: 3%;
+    border-radius: 10%;
+    width: 30%;
+    height: 70%;
+    position: relative; /* Para que la imagen se posicione dentro del div */
+    overflow: hidden; /* Evitar desbordamiento de la imagen */
+}
+div#mujdos{
+    background-color: red;
+    margin-top: -35.5%;
+    margin-left: 35%;
+    border-radius: 10%;
+    width: 30%;
+    height: 70%;
+    position: relative; 
+    overflow: hidden; 
+}
+div#mujtres{
+    background-color: red;
+  margin-top: -35.5%;
+    margin-left: 67%;
+    border-radius: 10%;
+    width: 30%;
+    height: 70%;
+    position: relative; 
+    overflow: hidden;
+}
+
+div#mujdos img.wo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+div#mujtres img.wo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+header#doz{
+    background-color: #d3d3d3;
+    margin-top: -4%;
+}
+.line {
+    width: 100%;
+    height: 2px; 
+    background-color: black; 
+    margin: 0; 
+}
+
+button#mk {
+    width: 10em;
+    margin-left: 44%;
+    margin-top: 5%;
+    position: absolute;
+    height: 3.5em;
+    border: 3px ridge #000000;
+    outline: none;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    transition: 1s;
+    border-radius: 0.3em;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button#mk::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #d3d3d3;
+    transition: 0.5s;
+    transform-origin: center;
+}
+
+button#mk::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #d3d3d3;
+    transition: 0.5s;
+}
+
+button#mk:hover::before, button#mk:hover::after {
+    transform: scale(0);
+}
+
+button#mk:hover {
+    box-shadow: inset 0px 0px 25px #000000;
+}
+
+
+
+  .coleccion-contenedor {
+    background-color: #000000 !important;
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
+    gap: 20px !important;
+    max-width: 1200px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+}
+
+.tarjeta-coleccion {
+    background-color: #000000 !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+    transition: transform 0.3s, box-shadow 0.3s!important;
+    width: 100% !important;
+}
+.tarjeta-coleccion{
+    border: 0.1px solid rgb(44, 44, 44) !important;
+   
+    
+}
+
+
+.tarjeta-coleccion:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
+}
+
+.tarjeta-coleccion img {
+    width: 100%;
+    height: auto;
+}
+
+.contenido-tarjeta {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenido-tarjeta h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.contenido-tarjeta p {
+    margin: 10px 0;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+.coleccion-contenedor #boton-compra {
+    background-color: #ebe705;
+    color: #000000;
+    border: none;
+    padding: 8px 16px;
+    font-size: 0.9em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: flex-end;
+}
+
+.coleccion-contenedor #boton-compra:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+div#s{
+    background-color: rgb(0, 0, 0);
+    margin-top: -3.5%;
+     width: 100%;
+    height: 200%;
+   
+}
+#e{
+    color: #000000;
+    margin-left: 26%;
+    margin-top: 6%;
+    font-size: 9em;
+    font-weight: 700;
+    position: absolute;
+}
+
+#e1{
+    color: #000000;
+    margin-left: 10%;
+    margin-top: 16%;
+    font-size: 9em;
+    font-weight: 700;
+    position: absolute;
+}
+
+#e2{
+    color: #000000;
+    margin-left: 30%;
+    margin-top: 26%;
+    font-size: 9em;
+    font-weight: 700;
+    position: absolute;
+}
+
+
+div#end{
+    background-color: #000000;
+    margin-top: -3.5%;
+     width: 100%;
+    height: 100%;
+}
+
+div#log {
+    background-color: transparent;
+    margin-left: 28%;
+    margin-top: 8%;
+    width: 50%;
+    height: 15%;
+    position: absolute; 
+    overflow: hidden;
+}
+
+div#log img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1); 
+    transform-origin: center; 
+}
+#eend {
+    margin-left: 39%;
+    margin-top: 20%;
+    font-size: 1.5em;
+    font-weight: 700;
+    position: absolute;
+    
+}
+
+
+.cards {
+    margin-left: 40%;
+    margin-top: 30%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    position: absolute;
+  }
+  
+  .cards .red {
+    background-color: #494949;
+  }
+  
+  .cards .blue {
+    background-color: #ffee0075;
+  }
+  
+  .cards .green {
+    background-color: #189acdb4;
+  }
+  
+  .cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .cards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+  }
+  
+  
+  .cards .card:hover {
+    transform: scale(1.2, 1.2);
+  }
+  
+  .cards:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+  }
+
+  
+ 
+.container999 {
+    display: flex;
+    margin-top: 45%;
+    margin-left: 46%;
+    position: absolute;
+  }
+  
+  .Btn {
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-left: 10px;
+  }
+  
+  .instagram {
+    background: #f09433;
+    background: -moz-linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    background: -webkit-linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    background: linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  }
+  
+  .youtube {
+    background-color: #ff0000;
+  }
+  
+  .twitter {
+    background-color: #1da1f2;
+  }
+  
+  .Btn:hover {
+    width: 110px;
+    transition-duration: 0.4s;
+    border-radius: 30px;
+  }
+  
+  .Btn:hover .text {
+    opacity: 1;
+    transition-duration: 0.4s;
+  }
+  
+  .Btn:hover .svgIcon {
+    opacity: 0;
+    transition-duration: 0.3s;
+  }
+  
+  .text {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    width: 120px;
+    font-weight: 600;
+    opacity: 0;
+    transition-duration: 0.4s;
+  }
+  
+  .svgIcon {
+    transition-duration: 0.3s;
+  }
+  
+  .svgIcon path {
+    fill: white;
+  }
+
+  .navbar .menu-icon {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*CELULAR*/
+  @media (max-width: 768px) {
+    .overlay {
+        position: fixed; 
+        top: 0;
+        left: 0;
+        
+    }
+    .navbar .logo {
+        font-size: 3em;
+        display: inline-block; 
+        white-space: nowrap; 
+    }
+    
+
+    .fondo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        z-index: -1; 
+    }
+    .navbar .menu {
+        display: none;
+        border-radius: 40px 40px 40px 40px;
+        flex-direction: column; 
+        position: absolute; 
+        background-color: rgba(51, 51, 51, 0.7); 
+        backdrop-filter: blur(10px); 
+        top: 100px; 
+        left: 150px; 
+        width: 500px; 
+        z-index: 1000; 
+        transition: all 0.3s ease; 
+    }
+    
+    
+
+    .navbar .menu-icon {
+        display: block; 
+        width: 40px; 
+        height: auto; 
+        cursor: pointer;
+        margin-left: 80%;
+        margin-top: -1%;
+    }
+
+    .navbar .menu a {
+        margin: 10px 0; /* Espaciado vertical entre los enlaces */
+    }
+
+    header{
+        background-color: black;
+        margin-top: 180%;
+    }
+    
+    div#tres > h1 {
+        position: absolute;
+        top: 190%;
+        left: 57%;
+        font-size: 3rem;
+        color: rgb(255, 0, 0);
+        z-index: 1;
+    }
+    
+div#cuatro > h1 {
+    position: absolute;
+    top: 190%;
+    left: 62%;
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+}
+div#cuatro > h2 {
+    position: absolute;
+    top: 190%;
+    left: 58%;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+}
+.content h1 {
+    position: absolute;
+    margin-top: 340%;
+    margin-left: 90%;
+    font-size: 4rem;
+    font-weight: 700;
+   
+}
+
+.content p {
+    margin-top: 110vh;
+    left: 50%; /* Ajuste horizontal controlado */
+    transform: translateX(120%);
+    font-size: 1.2em;
+    max-width: 80vw; /* Ajuste de ancho */
+}
+
+.content .button {
+    transform: translate(134%, 200%); 
+    font-size: 1.2em;  /* Tamaño original */
+    max-width: 80vw; /* Limitar el ancho máximo en móviles */
+    
+}
+
+h1#WINTER {
+    word-spacing: 5px;
+    font-size: 2.5rem;
+    margin-left: 23%;
+}
+
+header {
+    width: 200%;
+    height: 5%; 
+}
+
+div#uno {
+    
+    margin-top: -3.5%;
+    width: 200%;
+    height: 180%;
+}
+
+div#dos {
+    
+    margin-left: 10%;
+    width: 80%;
+    height: 60%;
+    top: 15%;
+}
+
+div#tres {
+    display: none;
+
+}
+
+div#cuatro > h2 {
+   display: none;
+}
+div#cuatro {
+  display: none;
+}
+header#lalala {
+    background-color: #000000;
+    margin-top: -6.8%;
+    
+}
+h1#mmm {
+    text-align: center;
+    font-size: 2.5rem;
+    
+}
+div#h {
+    margin-top: -3.5%;
+    width: 200%;
+    height: 180%;
+}
+
+div#hombres {
+    margin-left: 25%;
+    width: 50%;
+    height: 29.5%;
+    top: 5%;
+}
+div#hombresdos {
+    margin-left: 25%;
+    width: 50%;
+    height: 29.5%;
+    top: 25%;
+}
+div#hombrestres {
+    background-color: #000000;
+    margin-left: 25%;
+    width: 50%;
+    height: 29.5%;
+    top:45% ;
+}
+#unique-button {
+    display: none;
+}
+/*Mujeres*/
+.container {
+    width: 200%;
+}
+.main-text {
+    font-size: 5rem;
+    top: 40%;
+    left: 22%;
+}
+
+div#textom {
+    margin-top: 50%;
+    width: 70%;
+    height: 16%;
+}
+h2#info {
+    margin-top: 6%;
+    
+    
+    font-size: 1.3rem;
+
+}
+header#doz {
+    margin-top: -6%;
+}
+
+div#m {
+    width: 200%;
+    height: 180%;
+}
+div#muj {
+    margin-left: 25%;
+    width: 50%;
+    height: 29.5%;
+  
+}
+div#mujdos {
+    margin-left: 25%;
+    width: 50%;
+    height: 29.5%;
+    top: 23%;
+}
+div#mujtres {
+    margin-left: 25%;
+    width: 50%;
+    height: 29.5%;
+    top: 45%;
+}
+button#mk {
+ display: none;
+}
+header#lololo {
+  margin-top: -6.8%;
+}
+div#m.lululu {
+   margin-top: 55%;
+}
+.coleccion-contenedor {
+    width: 200%;
+    margin-top: 5%;
+}
+#e {
+    margin-top:135%;
+}
+#e1 {
+    margin-left: 20%;
+    margin-top: 180%;
+    font-size: 6em;
+    width: 180%;
+}
+#e2 {
+    position: center;
+    margin-left: 37%;
+    margin-top: 210%;
+    width: 150%;
+}
+div#end {
+    width: 200%;
+}
+div#log {
+   display: none;
+}
+#eend {
+    margin-left: 27%;
+    font-size: 3em;
+    width: 170%;
+  
+}
+.cards {
+    margin-left: 63%;
+    margin-top: 70%;
+    gap: 40px;
+   
+}
+.container999 {
+    margin-top: 140%;
+    margin-left: 78%;
+    gap: 40px;
+}
+}
+
+
+
+
+
+
+
+

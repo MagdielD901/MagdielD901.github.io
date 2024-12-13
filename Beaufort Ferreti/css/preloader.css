@@ -1,0 +1,120 @@
+/* Estilo general */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    color: white;
+    overflow: hidden; /* Bloquea el scroll mientras carga */
+}
+
+/* Preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    text-align: center;
+    opacity: 1; /* Asegura que el preloader esté visible al inicio */
+    transition: opacity 1s ease-out; /* Suaviza el desvanecimiento */
+}
+
+/* Logo y texto */
+.logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo img {
+    max-width: 150px; /* Tamaño del logo */
+    animation: fade-in-out 2s ease-in-out forwards;
+    opacity: 0;
+}
+
+.full-name {
+    font-size: 2rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+    display: inline-block;
+    width: 0;
+    opacity: 0;
+    animation: typing 2s ease-out 2s forwards, blink 0.5s step-end infinite 4s;
+    position: absolute; /* Ocupa el mismo lugar que el logo */
+    top: 50%; /* Centrado vertical */
+    left: 50%; /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Ajuste exacto */
+}
+
+/* Contenido principal */
+#contenido {
+    opacity: 0; /* Comienza invisible */
+    display: none; /* Lo ocultamos hasta el final del preloader */
+    animation: fadeIn 1.5s ease-out forwards; /* Animación de desvanecimiento */
+}
+
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Habilitar el scroll solo cuando termine el preloader */
+body.scrollable {
+    overflow: auto; /* Permite scroll después de que termine el preloader */
+}
+
+/* Animaciones */
+@keyframes fade-in-out {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes typing {
+    to {
+        width: 20ch; /* Ajusta según la longitud de "Beaufort Ferreti" */
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Tamaño original */
+        opacity: 1; /* Totalmente visible */
+    }
+    50% {
+        transform: scale(1.1); /* Aumenta un poco de tamaño */
+        opacity: 0.8; /* Reduce la opacidad ligeramente */
+    }
+    100% {
+        transform: scale(1); /* Regresa al tamaño original */
+        opacity: 1; /* Vuelve a ser completamente visible */
+    }
+}
+
+.pulse {
+    animation: pulse 1.5s infinite; /* La animación dura 1.5 segundos y se repite infinitamente */
+}

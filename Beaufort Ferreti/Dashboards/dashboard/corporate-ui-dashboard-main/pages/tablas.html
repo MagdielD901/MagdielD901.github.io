@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <title>
+    Beaufort Ferreti
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Noto+Sans:300,400,500,600,700,800|PT+Mono:300,400,500,600,700" rel="stylesheet" />
+  <!-- Nucleo Icons -->
+  <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/349ee9c857.js" crossorigin="anonymous"></script>
+  <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link id="pagestyle" href="../assets/css/corporate-ui-dashboard.css?v=1.0.0" rel="stylesheet" />
+  <link rel="stylesheet" href="../../../../shop_producto.css">
+</head>
+
+
+<body class="g-sidenav-show  bg-gray-100">
+  
+
+  <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 bg-slate-900 fixed-start " id="sidenav-main">
+    <div class="sidenav-header">
+      <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
+      <a class="navbar-brand d-flex align-items-center m-0" href="https://demos.creative-tim.com/corporate-ui-dashboard/pages/dashboard.html" target="_blank">
+        <span class="font-weight-bold text-lg">Beaufort Ferreti</span>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse px-4 w-auto " id="sidenav-collapse-main">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="../pages/dashboard.html">
+            <div class="icon icon-shape icon-sm px-0 text-center d-flex align-items-center justify-content-center">
+              <svg width="30px" height="30px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <title>dashboard</title>
+                <g id="dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="template" transform="translate(12.000000, 12.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <path class="color-foreground" d="M0,1.71428571 C0,0.76752 0.76752,0 1.71428571,0 L22.2857143,0 C23.2325143,0 24,0.76752 24,1.71428571 L24,5.14285714 C24,6.08962286 23.2325143,6.85714286 22.2857143,6.85714286 L1.71428571,6.85714286 C0.76752,6.85714286 0,6.08962286 0,5.14285714 L0,1.71428571 Z"></path>
+                    <path class="color-background" d="M0,12 C0,11.0532171 0.76752,10.2857143 1.71428571,10.2857143 L12,10.2857143 C12.9468,10.2857143 13.7142857,11.0532171 13.7142857,12 L13.7142857,22.2857143 C13.7142857,23.2325143 12.9468,24 12,24 L1.71428571,24 C0.76752,24 0,23.2325143 0,22.2857143 L0,12 Z"></path>
+                    <path class="color-background" d="M18.8571429,10.2857143 C17.9103429,10.2857143 17.1428571,11.0532171 17.1428571,12 L17.1428571,22.2857143 C17.1428571,23.2325143 17.9103429,24 18.8571429,24 L22.2857143,24 C23.2325143,24 24,23.2325143 24,22.2857143 L24,12 C24,11.0532171 23.2325143,10.2857143 22.2857143,10.2857143 L18.8571429,10.2857143 Z"></path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <span class="nav-link-text ms-1">Inicio</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/tables.html">
+            <div class="icon icon-shape icon-sm px-0 text-center d-flex align-items-center justify-content-center">
+              <svg width="30px" height="30px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <title>table</title>
+                <g id="table" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="view-grid" transform="translate(12.000000, 12.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <path class="color-foreground" d="M3.42857143,0 C1.53502286,0 0,1.53502286 0,3.42857143 L0,6.85714286 C0,8.75069143 1.53502286,10.2857143 3.42857143,10.2857143 L6.85714286,10.2857143 C8.75069143,10.2857143 10.2857143,8.75069143 10.2857143,6.85714286 L10.2857143,3.42857143 C10.2857143,1.53502286 8.75069143,0 6.85714286,0 L3.42857143,0 Z"></path>
+                    <path class="color-background" d="M3.42857143,13.7142857 C1.53502286,13.7142857 0,15.2492571 0,17.1428571 L0,20.5714286 C0,22.4650286 1.53502286,24 3.42857143,24 L6.85714286,24 C8.75069143,24 10.2857143,22.4650286 10.2857143,20.5714286 L10.2857143,17.1428571 C10.2857143,15.2492571 8.75069143,13.7142857 6.85714286,13.7142857 L3.42857143,13.7142857 Z"></path>
+                    <path class="color-background" d="M13.7142857,3.42857143 C13.7142857,1.53502286 15.2492571,0 17.1428571,0 L20.5714286,0 C22.4650286,0 24,1.53502286 24,3.42857143 L24,6.85714286 C24,8.75069143 22.4650286,10.2857143 20.5714286,10.2857143 L17.1428571,10.2857143 C15.2492571,10.2857143 13.7142857,8.75069143 13.7142857,6.85714286 L13.7142857,3.42857143 Z"></path>
+                    <path class="color-foreground" d="M13.7142857,17.1428571 C13.7142857,15.2492571 15.2492571,13.7142857 17.1428571,13.7142857 L20.5714286,13.7142857 C22.4650286,13.7142857 24,15.2492571 24,17.1428571 L24,20.5714286 C24,22.4650286 22.4650286,24 20.5714286,24 L17.1428571,24 C15.2492571,24 13.7142857,22.4650286 13.7142857,20.5714286 L13.7142857,17.1428571 Z"></path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <span class="nav-link-text ms-1">Tablas</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/wallet.html">
+            <div class="icon icon-shape icon-sm px-0 text-center d-flex align-items-center justify-content-center">
+              <svg width="30px" height="30px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title>wallet</title>
+                <g id="wallet" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="credit-card" transform="translate(12.000000, 15.000000)" fill="#FFFFFF">
+                    <path class="color-background" d="M3,0 C1.343145,0 0,1.343145 0,3 L0,4.5 L24,4.5 L24,3 C24,1.343145 22.6569,0 21,0 L3,0 Z" id="Path" fill-rule="nonzero"></path>
+                    <path class="color-foreground" d="M24,7.5 L0,7.5 L0,15 C0,16.6569 1.343145,18 3,18 L21,18 C22.6569,18 24,16.6569 24,15 L24,7.5 Z M3,13.5 C3,12.67155 3.67158,12 4.5,12 L6,12 C6.82842,12 7.5,12.67155 7.5,13.5 C7.5,14.32845 6.82842,15 6,15 L4.5,15 C3.67158,15 3,14.32845 3,13.5 Z M10.5,12 C9.67158,12 9,12.67155 9,13.5 C9,14.32845 9.67158,15 10.5,15 L12,15 C12.82845,15 13.5,14.32845 13.5,13.5 C13.5,12.67155 12.82845,12 12,12 L10.5,12 Z" id="Shape"></path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <span class="nav-link-text ms-1">Cartera</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/profile.html">
+            <div class="icon icon-shape icon-sm px-0 text-center d-flex align-items-center justify-content-center">
+              <svg width="30px" height="30px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <title>wallet</title>
+                <g id="wallet" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="credit-card" transform="translate(12.000000, 15.000000)" fill="#FFFFFF">
+                    <path class="color-background" d="M3,0 C1.34314575,0 0,1.34314575 0,3 L0,21 C0,22.6568542 1.34314575,24 3,24 L21,24 C22.6568542,24 24,22.6568542 24,21 L24,3 C24,1.34314575 22.6568542,0 21,0 L3,0 Z M21,21 L3,21 L3,3 L21,3 L21,21 Z"></path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <span class="nav-link-text ms-1">Perfil</span>
+          </a>
+        </li>
+       
+      </ul>
+    </div>
+  </aside>
+  
+
+<style>
+  /* Estilos adicionales para eliminar la barra de desplazamiento */
+  #sidenav-main {
+    overflow-y: hidden;
+    height: 100vh;
+  }
+  
+  /* Asegura que el contenido del navbar colapse correctamente en altura */
+  #sidenav-collapse-main {
+    max-height: calc(100vh - 60px); /* Ajusta para dejar espacio para la cabecera */
+    overflow-y: auto;
+  }
+
+  /* Ajustes de estilo */
+  .nav-link {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+  }
+  .nav-link:hover, .nav-link.active {
+    background-color: #1a202c; /* Fondo para el elemento activo */
+  }
+</style>
+
+  <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+   
+
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card shadow-xs border">
+            <div class="card-header pb-0">
+              <div class="d-sm-flex align-items-center mb-3">
+                <div>
+                 
+                  <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Arquitectura</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="ruta-a-tu-tipografia/konkhammer-sleockcher.css">
+
+    <style>
+        /* Aplicando la tipografía personalizada */
+        body {
+            font-family: 'Konkhammer Sleockcher', Arial, sans-serif;
+            background-color: #2D2E2E;
+            color: #FBFBFB;
+        }
+
+        /* Estilo de las tarjetas de servicio */
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: #FFFFFF;
+            border: 1px solid #716969;
+            border-radius: 10px;
+            color: #0F0F0F;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            min-height: 350px;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: 100%;
+            height: 200px; 
+            object-fit: cover;
+        }
+
+        .card-body {
+            flex-grow: 1;
+        }
+
+        .service-price {
+            color: #716969;
+            font-weight: bold;
+        }
+
+        .service-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #0F0F0F;
+            margin-bottom: 1rem;
+        }
+
+        .service-description {
+            font-size: 1rem;
+            color: #2D2E2E;
+            margin-bottom: 1rem;
+        }
+
+        .container-services {
+            padding-top: 50px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 40px;
+        }
+
+        /* Estilo del botón de volver */
+        .btn-volver {
+            background-color: #BCABAE;
+            color: #FFFFFF;
+            border: none;
+            padding: 6px 12px;
+            font-size: 0.875rem;
+            text-align: center;
+            display: block;
+            margin: 20px auto;
+            width: 240px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        /* Efecto hover: cambio de color, sombra y escala */
+        .btn-volver:hover {
+            background-color: #A99691;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+
+   
+    <!-- Sección de Tablas -->
+    <section id="servicios" class="container container-services">
+        <h2 class="section-title text-center">Tablas</h2>
+        <div class="row">
+          
+
+            <!-- Usuarios de empleados -->
+            <div class="col-md-4 mb-4">
+                <div class="card service-card">
+                    <img src="../../../../img/a1.jpg" class="card-img-top" alt="Diseño Arquitectónico">
+                    <div class="card-body">
+                        <h5 class="service-title">Usuarios de empleados</h5>
+                        <p class="service-description">Gestiona de manera eficiente los datos de tus usuarios, facilitando su acceso, edición y análisis. Cada registro está diseñado para optimizar la interacción y visualización de la información relevante.</p>
+                        <p class="service-price"></p>
+                        <a href="../pages/tables.php">
+                        <button class="cssbuttons-io">
+                            <span>
+                              Ver tabla 
+                            </span>
+                          </button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Productos -->
+            <div class="col-md-4 mb-4">
+                <div class="card service-card">
+                    <img src="../../../../img/a2.jpg" class="card-img-top" alt="Consultoría">
+                    <div class="card-body">
+                        <h5 class="service-title">Productos</h5>
+                        <p class="service-description">Monitorea todos los productos más recientes de tu inventario en tiempo real. Obtén una visión clara de tu catálogo y controla la disponibilidad de artículos con precisión.</p>
+                        <p class="service-price"></p>
+                        <a href="../pages/productos.php">
+                        <button class="cssbuttons-io">
+                            <span>
+                              Ver tabla 
+                            </span>
+                          </button></a>
+                      
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stock -->
+            <div class="col-md-4 mb-4">
+                <div class="card service-card">
+                    <img src="../../../../img/a3.jpg" class="card-img-top" alt="Gestión de Proyectos">
+                    <div class="card-body">
+                        <h5 class="service-title">Stock</h5>
+                        <p class="service-description">Controla el inventario de tu tienda con una vista clara y ordenada. Consulta niveles de stock, fechas de reposición y detalles de productos en un solo lugar, garantizando una gestión eficiente.</p>
+                        <p class="service-price"></p>
+                        <a href="./stock.php">
+                        <button class="cssbuttons-io">
+                            <span>
+                              Ver tabla 
+                            </span>
+                          </button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proveedores -->
+            <div class="col-md-4 mb-4">
+                <div class="card service-card">
+                    <img src="../../../../img/a4.jpg" class="card-img-top" alt="Visualización 3D y Maquetas">
+                    <div class="card-body">
+                        <h5 class="service-title">Proveedores</h5>
+                        <p class="service-description">Visualiza y gestiona la información de tus proveedores de manera organizada. Accede rápidamente a detalles como productos suministrados, 
+                            historial de compras y condiciones comerciales.ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</p>
+                        <p class="service-price"></p>
+                        <button class="cssbuttons-io">
+                            <span>
+                              Ver tabla 
+                            </span>
+                          </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pedidos -->
+            <div class="col-md-4 mb-4">
+                <div class="card service-card">
+                    <img src="../../../../img/a6.jpg" class="card-img-top" alt="Consultoría en Sostenibilidad">
+                    <div class="card-body">
+                        <h5 class="service-title">Pedidos</h5>
+                        <p class="service-description">Administra todos los pedidos de manera eficiente. Revisa el estado de cada uno, detalles del cliente y fecha de entrega para mantener un flujo de trabajo ordenado y mejorar la experiencia del cliente.</p>
+                        <p class="service-price"></p>
+                        <button class="cssbuttons-io">
+                            <span>
+                              Ver tabla 
+                            </span>
+                          </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Transacciones recientes -->
+            <div class="col-md-4 mb-4">
+                <div class="card service-card">
+                    <img src="../../../../img/a5.jpg" class="card-img-top" alt="Estudios de Viabilidad">
+                    <div class="card-body">
+                        <h5 class="service-title">Transacciones recientes</h5>
+                        <p class="service-description">Monitorea todas las transacciones recientes de tu negocio en tiempo real. Obtén una visión clara de las operaciones financieras y controla tus flujos de efectivo con precisión.</p>
+                        <p class="service-price"></p>
+                        <button class="cssbuttons-io">
+                            <span>
+                              Ver tabla 
+                            </span>
+                          </button>
+                    </div>
+                </div>
+            </div>
+
+           
+
+        </div>
+    </section>
+
+  
+    
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer pt-3  ">
+        <div class="container-fluid">
+          <div class="row align-items-center justify-content-lg-between">
+            <div class="col-lg-6 mb-lg-0 mb-4">
+              <div class="copyright text-center text-xs text-muted text-lg-start">
+                Copyright
+                © <script>
+                  document.write(new Date().getFullYear())
+                </script>
+                Beaufort Ferreri
+                <a href="https://magdield901.github.io/" class="text-secondary" target="_blank"></a>.
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+                <li class="nav-item">
+                  <a href="https://magdield901.github.io/" class="nav-link text-xs text-muted" target="_blank">Beaufort Ferreti</a>
+                </li>
+               
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </main>
+  
+  
+</body>
+
+</html>
